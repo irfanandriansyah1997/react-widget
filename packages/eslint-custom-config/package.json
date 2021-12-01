@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-react-widget-config",
+  "version": "1.0.1",
+  "description": "custom my own eslint config",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint --ignore-path ../../.gitignore \"*.+(ts|js|tsx)\"",
+    "format": "prettier --ignore-path ../../.gitignore \"*.+(ts|js|tsx)\" --write"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.16.3",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jsdoc": "^37.0.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-exports": "^0.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "prettier": "^2.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanandriansyah1997/pnpm-example.git"
+  },
+  "keywords": [
+    "eslint",
+    "linter",
+    "auto-prefixed",
+    "prettier",
+    "react"
+  ],
+  "author": "Irfan Andriansyah <irfanandriansyah10@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irfanandriansyah1997/pnpm-example/issues"
+  },
+  "homepage": "https://github.com/irfanandriansyah1997/pnpm-example#readme"
+}

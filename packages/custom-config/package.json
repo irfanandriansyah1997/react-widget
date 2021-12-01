@@ -1,0 +1,21 @@
+{
+  "name": "react-widget-config",
+  "version": "1.0.0",
+  "description": "custom config",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanandriansyah1997/pnpm-example.git"
+  },
+  "keywords": [
+    "prettier",
+    "monorepo",
+    "pnpm"
+  ],
+  "author": "Irfan Andriansyah <irfanandriansyah10@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irfanandriansyah1997/pnpm-example/issues"
+  },
+  "homepage": "https://github.com/irfanandriansyah1997/pnpm-example#readme"
+}
