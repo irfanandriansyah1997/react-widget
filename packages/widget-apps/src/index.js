@@ -1,18 +1,29 @@
-/**
- * Generate Method
- *
- * @param {string} param - name parameter
- * @returns {void}
- */
-export const hello = (param) => `hello world ${param}`;
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import styles from './style.module.css';
 
 /**
- * Running Instance
+ * Apps Component
  *
- * @returns {void}
+ * @returns {ReactNode}
  */
-const Initiate = () => {
-  console.debug(`${hello(new Date().toISOString())}`);
-};
+const Apps = () => (
+  <div
+    className={styles['sample-widget']}
+    onClick={(e) => {
+      e.preventDefault();
 
-Initiate();
+      alert('from widget side');
+    }}
+  >
+    Widget
+  </div>
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Apps />
+  </React.StrictMode>,
+  document.getElementById('widget')
+);

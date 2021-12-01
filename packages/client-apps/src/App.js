@@ -9,14 +9,25 @@ import styles from './style.module.css';
  */
 function App() {
   useEffect(() => {
-    const s = document.createElement('script');
-    s.type = 'text/javascript';
-    s.src = 'http://localhost:9000/index.bundle.js';
+    const widgetScript = document.createElement('script');
+    widgetScript.type = 'text/javascript';
+    widgetScript.src = 'http://localhost:9000/index.bundle.js';
 
-    document.body.append(s);
+    document.body.append(widgetScript);
   }, []);
 
-  return <div className={styles.apps}>Client Content</div>;
+  return (
+    <div
+      className={styles.apps}
+      onClick={(e) => {
+        e.preventDefault();
+
+        alert('from client side');
+      }}
+    >
+      Client Content
+    </div>
+  );
 }
 
 export default App;
