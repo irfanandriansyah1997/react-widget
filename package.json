@@ -1,0 +1,40 @@
+{
+  "name": "react-widget",
+  "version": "1.0.0",
+  "description": "create sample react widget",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "bootstrap": "bnr bootstrap"
+  },
+  "betterScripts": {
+    "bootstrap": {
+      "command": "pnpm recursive install"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irfanandriansyah1997/react-widget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irfanandriansyah1997/react-widget/issues"
+  },
+  "homepage": "https://github.com/irfanandriansyah1997/react-widget#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8.1.0",
+    "pnpm": ">=6.23.2"
+  },
+  "keywords": [
+    "react",
+    "widget"
+  ],
+  "devDependencies": {
+    "better-npm-run": "^0.1.1"
+  }
+}

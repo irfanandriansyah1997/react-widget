@@ -1,0 +1,1 @@
+console.debug('hi from widget');
