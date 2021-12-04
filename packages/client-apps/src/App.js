@@ -1,32 +1,24 @@
-import { useEffect } from 'react';
+import { ReactNode } from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
 
-import styles from './style.module.css';
+import './style.module.css';
+import ListPage from './routes/list';
 
 /**
  * Apps
  *
- * @returns {ReactNode}
+ * @returns {ReactNode} html tag will be rendered from react dom
  */
 function App() {
-  useEffect(() => {
-    const widgetScript = document.createElement('script');
-    widgetScript.type = 'text/javascript';
-    widgetScript.src = 'http://localhost:9000/index.bundle.js';
-
-    document.body.append(widgetScript);
-  }, []);
-
   return (
-    <div
-      className={styles.apps}
-      onClick={(e) => {
-        e.preventDefault();
-
-        alert('from client side');
-      }}
-    >
-      Client Content
-    </div>
+    <Routes>
+      <Route path="/">
+        <Route path="list">
+          <Route index element={<ListPage />} />
+        </Route>
+        <Route index element={<Navigate to="/list" replace={true} />} />
+      </Route>
+    </Routes>
   );
 }
 

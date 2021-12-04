@@ -1,0 +1,9 @@
+.list-card {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 100px auto 0;
+    max-width: 1024px;
+    flex-wrap: wrap;
+    width: 100%;
+}
