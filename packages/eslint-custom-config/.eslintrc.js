@@ -9,7 +9,9 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:react/recommended'
   ],
+  parser: 'babel-eslint',
   parserOptions: {
+    allowImportExportEverywhere: true,
     ecmaFeatures: {
       modules: true
     },
