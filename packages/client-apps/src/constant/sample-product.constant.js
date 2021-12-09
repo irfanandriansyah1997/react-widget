@@ -49,5 +49,22 @@ export const SAMPLE_LIST_CONSTANT = [
     price: 'Rp 3.999.000',
     title:
       'Sony WF 1000XM4 / WF 1000XM4 / WF1000XM4 Headphon Noise Canceling - Hitam'
+  },
+  {
+    address: 'Jakarta Pusat',
+    id: 'product-7',
+    image:
+      'https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/6/8/938272a1-7ad5-42ce-a96b-f7bf6274b603.jpg.webp?ect=4g',
+    price: 'Rp 1.449.000',
+    title:
+      'Shure SE215 Sound Isolating Earphones with Mic / Shure SE 215 - Putih'
+  },
+  {
+    address: 'Jakarta Selatan',
+    id: 'product-8',
+    image:
+      'https://images.tokopedia.net/img/cache/200-square/VqbcmM/2021/12/1/40ff6577-7703-4b8e-bc42-ee5b6a605a9c.jpg.webp?ect=4g',
+    price: 'Rp 2.999.000',
+    title: 'Fujifilm Instax Mini Evo'
   }
 ];

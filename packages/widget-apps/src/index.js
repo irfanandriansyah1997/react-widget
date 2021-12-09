@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import EventEmitter from './helper/event-emitter.helper';
+import { WishlistProvider } from './hooks/wishlist.hooks';
 import { Apps } from './apps';
-import { EVENT_PAGE } from './constant';
+import { EVENT_ON_ADD_LISTING, EVENT_PAGE } from './constant';
 
 /**
  * React Widget SDK
@@ -21,15 +22,19 @@ class ReactSDKWidget {
    */
   static init() {
     ReactDOM.render(
-      <React.StrictMode>
+      <WishlistProvider>
         <Apps />
-      </React.StrictMode>,
+      </WishlistProvider>,
       document.getElementById('widget')
     );
   }
 
   static setPage(page) {
     EventEmitter.emit(EVENT_PAGE, page);
+  }
+
+  static setListing(listing) {
+    EventEmitter.emit(EVENT_ON_ADD_LISTING, listing);
   }
 }
 

@@ -23,6 +23,8 @@
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "@babel/preset-react": "^7.16.0",
+    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/webpack-plugin": "^5.15.1",
     "babel-loader": "^8.2.2",
     "better-npm-run": "^0.1.1",
     "css-loader": "^5.2.7",
@@ -36,9 +38,12 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.0",
     "eventemitter3": "^4.0.7",
     "express": "^4.17.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-transition-group": "^4.4.2"
   }
 }

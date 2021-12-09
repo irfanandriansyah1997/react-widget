@@ -14,21 +14,14 @@ import styles from './style/style.module.css';
  * @param {Function} props.onClickCard callback function will be invoked when user click button
  * @returns {ReactNode} html tag will be rendered from react dom
  */
-export const ProductCard = ({
-  address,
-  id,
-  image,
-  onClickCard,
-  price,
-  title
-}) => {
+export const ProductCard = ({ address, image, onClickCard, price, title }) => {
   const eventOnClickCard = useCallback(
     (e) => {
       e.preventDefault();
 
-      if (onClickCard) onClickCard(id);
+      if (onClickCard) onClickCard();
     },
-    [onClickCard, id]
+    [onClickCard]
   );
 
   return (

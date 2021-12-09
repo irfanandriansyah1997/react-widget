@@ -1,7 +1,9 @@
-import React from 'react';
+import loadable from '@loadable/component';
+import React, { memo } from 'react';
 
-import { useRoute } from './hooks/listing.hooks';
-import { ListPage } from './route/list';
+import { useRoute } from './hooks/routing.hooks';
+
+const ListPage = memo(loadable(() => import('./route/list')));
 
 /**
  * Apps Component

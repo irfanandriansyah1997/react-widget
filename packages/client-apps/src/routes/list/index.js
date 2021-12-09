@@ -16,10 +16,25 @@ function ListPage() {
     }
   }, []);
 
+  /**
+   * On CLick Product Event Handler
+   *
+   * @param {object} item - list item
+   * @since 2021.12.09
+   * @returns {void}
+   */
+  const onClickProductCard = (item) => {
+    ReactSDKWidget.setListing(item);
+  };
+
   return (
     <div className={styles['list-card']}>
       {SAMPLE_LIST_CONSTANT.map((item) => (
-        <ProductCard key={item.image} {...item} />
+        <ProductCard
+          key={item.image}
+          {...item}
+          onClickCard={() => onClickProductCard(item)}
+        />
       ))}
     </div>
   );
