@@ -15,7 +15,6 @@ export const useRoute = () => {
 
   useEffect(() => {
     Emitter.on(EVENT_PAGE, (page) => {
-      console.debug(page);
       setPage(page);
     });
 
