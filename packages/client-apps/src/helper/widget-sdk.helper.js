@@ -3,6 +3,7 @@
  *
  * @author Irfan Andriansyah <irfan.andriansyah@tokopedia.com>
  * @since 2021.12.11
+ * @returns {Promise<object>} react sdqk widget
  */
 export const getSDKInstance = () =>
   new Promise((resolve) => {

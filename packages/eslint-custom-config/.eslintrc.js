@@ -29,6 +29,7 @@ module.exports = {
     'sort-keys-fix',
     'react-hooks'
   ],
+  root: true,
   rules: {
     'arrow-body-style': 0,
     camelcase: 0,

@@ -10,8 +10,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^8.3.0",
+    "eslint": "^8.4.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
@@ -43,5 +42,24 @@
   "bugs": {
     "url": "https://github.com/irfanandriansyah1997/pnpm-example/issues"
   },
-  "homepage": "https://github.com/irfanandriansyah1997/pnpm-example#readme"
+  "homepage": "https://github.com/irfanandriansyah1997/pnpm-example#readme",
+  "peerDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.0",
+    "eslint-plugin-jsdoc": "^37.2.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-exports": "^0.6.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "prettier": "^2.5.0"
+  }
 }
