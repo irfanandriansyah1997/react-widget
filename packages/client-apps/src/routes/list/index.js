@@ -2,6 +2,7 @@ import { ReactNode, useEffect } from 'react';
 
 import { ProductCard } from '../../components/product-card';
 import { SAMPLE_LIST_CONSTANT } from '../../constant';
+import { getSDKInstance } from '../../helper/widget-sdk.helper';
 import styles from './style/style.module.css';
 
 /**
@@ -11,9 +12,9 @@ import styles from './style/style.module.css';
  */
 function ListPage() {
   useEffect(() => {
-    if (typeof ReactSDKWidget !== 'undefined') {
-      ReactSDKWidget.setPage('list');
-    }
+    getSDKInstance().then((item) => {
+      item.setPage('list');
+    });
   }, []);
 
   /**

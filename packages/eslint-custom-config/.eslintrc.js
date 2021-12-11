@@ -9,7 +9,6 @@ module.exports = {
     'plugin:jsdoc/recommended',
     'plugin:react/recommended'
   ],
-  parser: 'babel-eslint',
   parserOptions: {
     allowImportExportEverywhere: true,
     ecmaFeatures: {
@@ -31,11 +30,13 @@ module.exports = {
     'react-hooks'
   ],
   rules: {
+    'arrow-body-style': 0,
     camelcase: 0,
     'class-methods-use-this': 0,
     'comma-dangle': [2, 'never'],
     'default-case': 0,
     'global-require': 0,
+    'implicit-arrow-linebreak': 0,
     'import/extensions': [
       0,
       'ignorePackages',
