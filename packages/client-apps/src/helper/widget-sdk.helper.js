@@ -23,7 +23,7 @@ export const getSDKInstance = () =>
 export const setSDK = () => {
   const script = document.createElement('script');
   script.setAttribute('crossorigin', '');
-  script.setAttribute('src', 'http://localhost:9000/main.bundle.js');
+  script.setAttribute('src', process.env.REACT_APP_WIDGET_FILES);
 
   document.body.append(script);
 
