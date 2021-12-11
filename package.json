@@ -5,10 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "setup": "node -e \"process.exitCode = process.env.npm_execpath.includes('pnpm') ? 1 : 0;\" && npx pnpm@4.13.0 install || echo \"dependencies installed with pnpm\" && bnr bootstrap",
+    "prebootstrap": "bnr bootstrap",
     "bootstrap": "bnr bootstrap",
     "run:client": "bnr run:client",
     "run:widget:dev": "bnr run:widget:dev",
-    "run:widget:prod": "bnr run:widget:prod"
+    "run:widget:prod": "bnr run:widget:prod",
+    "run:widget:build": "bnr run:widget:build"
   },
   "betterScripts": {
     "bootstrap": {
@@ -22,6 +25,9 @@
     },
     "run:widget:prod": {
       "command": "pnpm --filter widget-apps run prod"
+    },
+    "run:widget:build": {
+      "command": "pnpm --filter widget-apps run prod:build"
     }
   },
   "repository": {
@@ -38,9 +44,8 @@
     "packages/*"
   ],
   "engines": {
-    "node": ">=16",
-    "npm": ">=8.1.0",
-    "pnpm": ">=6.23.2"
+    "node": ">=14",
+    "pnpm": ">=4"
   },
   "keywords": [
     "react",
@@ -49,6 +54,7 @@
   "devDependencies": {
     "better-npm-run": "^0.1.1",
     "npm-run-all": "^4.1.5",
+    "pnpm": "4",
     "typescript": "^4.5.2"
   }
 }
